@@ -20,6 +20,8 @@ $(document).ready(function() {
         seguidores.innerText = json.followers;
         repositorios.innerText = json.public_repos;
         github.href = json.html_url;
+    }).finally (function() {
+        console.log("tudo feito");
     })
     
 
